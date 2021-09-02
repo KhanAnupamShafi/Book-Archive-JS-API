@@ -39,7 +39,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar pt-3 sticky-top navbar-light bg-warning">
+      <nav class="navbar pt-3 sticky-top navbar-light bg-nav">
         <!-- Title Brand  -->
 
         <div class="m-auto">
@@ -48,9 +48,9 @@
               <a class="navbar-brand mt-2 mt-lg-0" href="#">
                 <h1 class="text-dark">
                   <span
-                    ><i class="fas fa-book-open me-2 text-danger fs-2"></i
-                  ></span>
-                  BOOK ARCHIVE
+                    ><i class="fas fa-book-open me-2 fs-2 text-danger"></i>BOOK
+                    ARCHIVE</span
+                  >
                 </h1>
               </a>
             </li>
@@ -67,7 +67,7 @@
               <input
                 type="text"
                 id="myInput"
-                class="form-control textColor fs-5 form-control-lg"
+                class="form-control fs-4 form-control-lg"
               />
               <label class="form-label" for="myInput"
                 >Search Any Book e.g. "Javascript"</label
@@ -88,91 +88,52 @@
 
     <main>
       <div class="contaienr-fluid">
-        <!-- -------------------- Show search result info/error -------------------- -->
+        <!-- -------------------- Show search error -------------------- -->
 
         <ul class="text-center list-unstyled my-1">
-          <li id="error" class="d-none">
-            <a href="#" class="btn errorMessages btn-lg btn-outline-dark fs-6">
+          <li id="error" class="text-center">
+            <button
+              type="button"
+              class="btn btn-outline-danger fs-5"
+              data-mdb-ripple-color="dark"
+            >
               <i class="bi bi-exclamation-triangle-fill fs-5 me-3"></i>Search
               Field Cannot be empty! Pls provide a name
-            </a>
+            </button>
           </li>
           <li id="errortwo" class="d-none">
-            <a href="#" class="btn errorMessages btn-lg btn-outline-dark fs-6">
-              <i class="bi bi-exclamation-triangle-fill fs-5 me-3"></i>Sorry
-              taking too long to respond. Try Different name
-            </a>
+            <button
+              type="button"
+              class="btn btn-outline-danger fs-5"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fas fa-exclamation-circle fs-5 me-3"></i>Server taking
+              too long to respond. Please Try a Different Name
+            </button>
           </li>
+          <!-- ----------------------------- Show result info ----------------------------- -->
+
           <li id="resultStat"></li>
+          <!-- ----------------------------- Show spinner  ----------------------------- -->
+          <li id="spinner">
+            <button class="btn fs-5 bg-spinner" type="button" disabled>
+              <span
+                class="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Loading data...
+              <span> <i class="fas fa-download"></i></span> Please Be patient.
+            </button>
+          </li>
         </ul>
       </div>
 
       <!-- -------------------- Main search result container --------------------- -->
 
       <div class="container">
-        <div id="book-container" class="row my-2">
+        <div id="book-container" class="row my-2 bg-container">
           <!-- --------------------------- Add searched books here ---------------------------- -->
-          <!-- <div class="col-lg-4 col-md-6 my-2">
-            <div
-              class="
-                card
-                w-75
-                rounded
-                mx-auto
-                border border-warning
-                hover-shadow
-              "
-            >
-              <div
-                style="height: 328px"
-                class="text-center rounded bg-image hover-overlay ripple w-100"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="./images/554106-M.jpg"
-                  class="img-fluid shadow-2-strong w-100 h-100"
-                />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.15)"
-                  ></div>
-                </a>
-              </div>
-              <div class="text-center">
-                <p class="card-header fs-5">
-                  <span
-                    class="ms-2 fw-bolder badge bg-white text-black text-wrap"
-                    >Bibliographic information :</span
-                  >
-                </p>
-              </div>
-              <div class="bg-white px-2 text-center text-capitalize">
-                <h4 class="bg-warning rounded p-2 text-dark">
-                  <strong> Javascript a beginner approach easy made</strong>
-                </h4>
-              </div>
-              <div class="card-body text-capitalize p-0">
-                <h5 class="card-header rounded text-end">
-                  <strong class="me-2 fw-lighter fs-4 text-info"> - by </strong
-                  ><span class="fs-6 fst-italic fw-bold text-info">
-                    D.f. Franklin jr..</span
-                  >
-                </h5>
-                <p class="card-header fs-5 text-left">
-                  <small class="me-3">First Publish Year:</small>
-                  <span class="textColor text-wrap">2019</span>
-                </p>
-
-                <p class="card-header text-dark fs-5 text-left">
-                  <small class="p-1 rounded">Publisher:</small>
-                  <span class="ms-2 fw-bolder badge bg-primary text-wrap"
-                    >sheba prokahoni</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div> -->
         </div>
 
         <!-- main container ends -->

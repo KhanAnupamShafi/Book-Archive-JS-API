@@ -1,21 +1,28 @@
+/* ------------------------------- Font import ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Scope+One&display=swap");
+
+/* ------------------------------- body reset ------------------------------- */
 body {
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Scope One", "Roboto", serif;
+  background: linear-gradient(-45deg, #ebf3f8a9, #ebedee);
 }
 
+/* ------------------------------- Add colors ------------------------------- */
+
 #myInput {
+  color: #d84258;
   width: 30rem;
-}
-.textColor {
-  color: #a92913;
+  font-size: 3px;
+  font-family: "Roboto", serif;
 }
 
 .errorMessages {
-  color: #f93154;
-  background-color: #f3d5d5af;
-  border: 1px solid #d84258;
+  background-color: rgb(59, 51, 55);
+  border: 1px solid #000000;
   border-radius: 4px;
   text-shadow: 0 1px 0 rgba(197, 149, 19, 0.486);
 }
@@ -33,6 +40,37 @@ body {
 }
 .resultMessages span {
   font-weight: bold;
+}
+.bg-nav {
+  color: darkblue;
+  background: linear-gradient(-45deg, #bcc6cc, #eee, #bcc6cc);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+.bg-container {
+  background-color: #ffffff;
+  border: 1px solid #f93154;
+}
+
+/* ---------------------------- Spinner animation --------------------------- */
+
+.bg-spinner {
+  color: white;
+  background: linear-gradient(-245deg, #bdc3c7, #2c3e50, #0c0e13);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .authorStyle {
