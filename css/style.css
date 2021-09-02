@@ -5,6 +5,41 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#myInput {
+  width: 30rem;
+}
 .textColor {
   color: #a92913;
+}
+
+.errorMessages {
+  color: #f93154;
+  background-color: #f3d5d5af;
+  border: 1px solid #d84258;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(197, 149, 19, 0.486);
+}
+.errorMessages span {
+  font-weight: bold;
+}
+.resultMessages {
+  color: #f1b40ace;
+
+  background-color: #000000;
+
+  border: 1px solid #36181d;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(182, 23, 23, 0.616);
+}
+.resultMessages span {
+  font-weight: bold;
+}
+
+.bigNum {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 900;
+  color: #d84258;
 }
