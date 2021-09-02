@@ -24,7 +24,7 @@ const getInputValue = () => {
     return;
   }
 
-  const url = `http://openlibrary.org/search.json?q=${inputVal}`;
+  const url = `https://openlibrary.org/search.json?q=${inputVal}`;
 
   fetch(url)
     .then((response) => response.json())
@@ -35,14 +35,14 @@ const getInputValue = () => {
 
 /* ------------------ Get all the books and check for error ----------------- */
 const getAllbooks = (books) => {
-  console.log("status code", books);
+  // console.log("status code", books);
   if (books.error) {
     displayError("timeout");
   } else if (books.numFound === 0) {
     displayError("noresult");
   } else if (books.numFound) {
     foundBooks(books);
-  } else console.log("Unknown Error");
+  } else alert("Unknown Error Occured");
 };
 
 /* ------------------------- All found books process ------------------------ */
@@ -57,7 +57,7 @@ const foundBooks = (result) => {
 
   const bookReciever = (recievedBooks, bookInfo) => {
     const recieved = recievedBooks.slice(0, 30);
-    console.log("total books in book recieve", recieved);
+    console.log("total books  recieved", recieved);
     recieved.forEach((book) => {
       const bookCard = document.createElement("div");
 

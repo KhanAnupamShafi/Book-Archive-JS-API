@@ -4,9 +4,9 @@
 Please Click this link to create your assignment private repo: [https://classroom.github.com/a/mOiiFMDY](https://classroom.github.com/a/mOiiFMDY)
 
 
-### [Assignment Netlify Live Link](https://khananupamshafi.github.io/random-user-api/)
+### [Assignment Netlify Live Link](https://anupams-bookarchive.netlify.app/)
 
-#### This is the link: https://khananupamshafi.github.io/random-user-api
+#### This is the link: https://anupams-bookarchive.netlify.app/
 
 ## 👩‍💻 Languages Used
 
