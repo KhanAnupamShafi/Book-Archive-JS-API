@@ -1,9 +1,5 @@
 # Book-archive
 
-## [Private Repository Link](https://classroom.github.com/a/mOiiFMDY)
-Please Click this link to create your assignment private repo: [https://classroom.github.com/a/mOiiFMDY](https://classroom.github.com/a/mOiiFMDY)
-
-
 ### [Assignment Netlify Live Link](https://anupams-bookarchive.netlify.app/)
 
 #### This is the link: https://anupams-bookarchive.netlify.app/
